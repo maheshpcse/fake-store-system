@@ -1,0 +1,80 @@
+[{
+  "_id": {
+    "$oid": "6a3191bc7c3aa60fe91fad09"
+  },
+  "id": 3,
+  "code": "SUMMER25",
+  "type": "percentage",
+  "value": 25,
+  "minOrderAmount": 200,
+  "maxDiscount": 100,
+  "usageLimit": 200,
+  "usedCount": 200,
+  "isActive": false,
+  "validFrom": {
+    "$date": "2020-05-01T00:00:00.000Z"
+  },
+  "validUntil": {
+    "$date": "2020-08-31T23:59:59.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a3191bc7c3aa60fe91fad08"
+  },
+  "id": 2,
+  "code": "FLAT50",
+  "type": "flat",
+  "value": 50,
+  "minOrderAmount": 500,
+  "maxDiscount": 50,
+  "usageLimit": 500,
+  "usedCount": 150,
+  "isActive": true,
+  "validFrom": {
+    "$date": "2020-01-01T00:00:00.000Z"
+  },
+  "validUntil": {
+    "$date": "2024-06-30T23:59:59.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a3191bc7c3aa60fe91fad0a"
+  },
+  "id": 4,
+  "code": "NEWUSER30",
+  "type": "percentage",
+  "value": 30,
+  "minOrderAmount": 300,
+  "maxDiscount": 150,
+  "usageLimit": 100,
+  "usedCount": 45,
+  "isActive": true,
+  "validFrom": {
+    "$date": "2023-01-01T00:00:00.000Z"
+  },
+  "validUntil": {
+    "$date": "2026-12-31T23:59:59.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a3191bc7c3aa60fe91fad07"
+  },
+  "id": 1,
+  "code": "WELCOME10",
+  "type": "percentage",
+  "value": 10,
+  "minOrderAmount": 100,
+  "maxDiscount": 50,
+  "usageLimit": 1000,
+  "usedCount": 320,
+  "isActive": true,
+  "validFrom": {
+    "$date": "2020-01-01T00:00:00.000Z"
+  },
+  "validUntil": {
+    "$date": "2025-12-31T23:59:59.000Z"
+  }
+}]

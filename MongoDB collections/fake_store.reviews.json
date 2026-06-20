@@ -1,0 +1,90 @@
+[{
+  "_id": {
+    "$oid": "6a3191bd7c3aa60fe91fad0f"
+  },
+  "id": 5,
+  "productId": 18,
+  "userId": 7,
+  "rating": 3,
+  "title": "Average quality",
+  "comment": "Fabric could be better. Color faded after two washes.",
+  "isVerifiedPurchase": false,
+  "createdAt": {
+    "$date": "2020-04-15T10:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a3191bd7c3aa60fe91fad0d"
+  },
+  "id": 3,
+  "productId": 1,
+  "userId": 3,
+  "rating": 5,
+  "title": "Love this backpack",
+  "comment": "Durable and spacious. Using it daily for work.",
+  "isVerifiedPurchase": true,
+  "createdAt": {
+    "$date": "2020-01-20T14:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a3191bd7c3aa60fe91fad0e"
+  },
+  "id": 4,
+  "productId": 3,
+  "userId": 5,
+  "rating": 4,
+  "title": "Good quality",
+  "comment": "Nice jacket. Slightly tight on the arms but overall great.",
+  "isVerifiedPurchase": false,
+  "createdAt": {
+    "$date": "2020-05-01T18:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a3191bd7c3aa60fe91fad10"
+  },
+  "id": 6,
+  "productId": 13,
+  "userId": 5,
+  "rating": 5,
+  "title": "Best budget monitor",
+  "comment": "Crisp display, thin bezels. Highly recommended.",
+  "isVerifiedPurchase": true,
+  "createdAt": {
+    "$date": "2020-05-20T16:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a3191bd7c3aa60fe91fad0b"
+  },
+  "id": 1,
+  "productId": 3,
+  "userId": 8,
+  "rating": 5,
+  "title": "Excellent jacket!",
+  "comment": "Very warm and comfortable. Perfect for winter hiking.",
+  "isVerifiedPurchase": true,
+  "createdAt": {
+    "$date": "2020-03-10T12:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a3191bd7c3aa60fe91fad0c"
+  },
+  "id": 2,
+  "productId": 13,
+  "userId": 3,
+  "rating": 4,
+  "title": "Great monitor for the price",
+  "comment": "Display quality is really good. Slight backlight bleed but acceptable.",
+  "isVerifiedPurchase": true,
+  "createdAt": {
+    "$date": "2020-01-15T09:00:00.000Z"
+  }
+}]

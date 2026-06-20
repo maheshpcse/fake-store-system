@@ -1,0 +1,14 @@
+{
+  "QueueName": "${DLQ_NAME}",
+  "Attributes": {
+    "MessageRetentionPeriod": "1209600",
+    "VisibilityTimeout": "900",
+    "SqsManagedSseEnabled": "true"
+  },
+  "Tags": {
+    "Application": "fake-store",
+    "Environment": "production",
+    "Purpose": "lambda-failed-events"
+  }
+}
+

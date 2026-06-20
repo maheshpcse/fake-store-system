@@ -1,0 +1,39 @@
+{
+  "service": "Amazon RDS for MySQL",
+  "DBInstanceIdentifier": "fake-store-mysql",
+  "Engine": "mysql",
+  "EngineVersion": "${SUPPORTED_MYSQL_ENGINE_VERSION}",
+  "DBInstanceClass": "db.t4g.micro",
+  "AllocatedStorage": 20,
+  "MaxAllocatedStorage": 100,
+  "StorageType": "gp3",
+  "StorageEncrypted": true,
+  "MultiAZ": false,
+  "PubliclyAccessible": false,
+  "DBName": "fake_store",
+  "MasterUsername": "${DB_USERNAME}",
+  "ManageMasterUserPassword": true,
+  "BackupRetentionPeriod": 7,
+  "DeletionProtection": true,
+  "AutoMinorVersionUpgrade": true,
+  "VpcSecurityGroupIds": [
+    "${RDS_SECURITY_GROUP_ID}"
+  ],
+  "DBSubnetGroupName": "${RDS_DB_SUBNET_GROUP_NAME}",
+  "EnableCloudwatchLogsExports": [
+    "error",
+    "slowquery"
+  ],
+  "CopyTagsToSnapshot": true,
+  "Tags": [
+    {
+      "Key": "Application",
+      "Value": "fake-store"
+    },
+    {
+      "Key": "Environment",
+      "Value": "production"
+    }
+  ]
+}
+

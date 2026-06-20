@@ -1,0 +1,2 @@
+"""Fake Store backend application."""
+

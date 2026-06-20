@@ -1,0 +1,90 @@
+[{
+  "_id": {
+    "$oid": "6a3191bc7c3aa60fe91facee"
+  },
+  "id": 4,
+  "cartId": 4,
+  "userId": 3,
+  "productId": 13,
+  "title": "Acer SB220Q bi 21.5 inches Full HD IPS Ultra-Thin",
+  "price": 599,
+  "quantity": 1,
+  "addedAt": {
+    "$date": "2020-01-01T00:10:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a3191bc7c3aa60fe91facef"
+  },
+  "id": 5,
+  "cartId": 7,
+  "userId": 5,
+  "productId": 3,
+  "title": "Mens Cotton Jacket",
+  "price": 55.99,
+  "quantity": 1,
+  "addedAt": {
+    "$date": "2020-04-10T11:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a3191bc7c3aa60fe91faceb"
+  },
+  "id": 1,
+  "cartId": 6,
+  "userId": 8,
+  "productId": 18,
+  "title": "MBJ Women's Solid Short Sleeve Boat Neck V",
+  "price": 9.85,
+  "quantity": 1,
+  "addedAt": {
+    "$date": "2020-03-01T00:00:02.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a3191bc7c3aa60fe91facf0"
+  },
+  "id": 6,
+  "cartId": 7,
+  "userId": 5,
+  "productId": 13,
+  "title": "Acer SB220Q bi 21.5 inches Full HD IPS Ultra-Thin",
+  "price": 599,
+  "quantity": 1,
+  "addedAt": {
+    "$date": "2020-04-10T11:05:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a3191bc7c3aa60fe91facec"
+  },
+  "id": 2,
+  "cartId": 4,
+  "userId": 3,
+  "productId": 1,
+  "title": "Fjallraven - Foldsack No. 1 Backpack",
+  "price": 109.95,
+  "quantity": 4,
+  "addedAt": {
+    "$date": "2020-01-01T00:00:02.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a3191bc7c3aa60fe91faced"
+  },
+  "id": 3,
+  "cartId": 6,
+  "userId": 8,
+  "productId": 3,
+  "title": "Mens Cotton Jacket",
+  "price": 55.99,
+  "quantity": 2,
+  "addedAt": {
+    "$date": "2020-03-01T00:05:00.000Z"
+  }
+}]

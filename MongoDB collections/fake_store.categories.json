@@ -1,0 +1,65 @@
+[{
+  "_id": {
+    "$oid": "6a3191bc7c3aa60fe91face3"
+  },
+  "id": 3,
+  "name": "women's clothing",
+  "description": "Clothing and apparel for women",
+  "image": "https://fakestoreapi.com/img/category-womens.jpg",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2023-01-01T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a3191bc7c3aa60fe91face5"
+  },
+  "id": 5,
+  "name": "home & kitchen",
+  "description": "Home appliances and kitchen essentials",
+  "image": "https://fakestoreapi.com/img/category-home.jpg",
+  "isActive": false,
+  "createdAt": {
+    "$date": "2023-06-15T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a3191bc7c3aa60fe91face4"
+  },
+  "id": 4,
+  "name": "jewelery",
+  "description": "Rings, necklaces, bracelets and more",
+  "image": "https://fakestoreapi.com/img/category-jewelery.jpg",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2023-01-01T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a3191bc7c3aa60fe91face1"
+  },
+  "id": 1,
+  "name": "electronics",
+  "description": "Electronic gadgets and devices",
+  "image": "https://fakestoreapi.com/img/category-electronics.jpg",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2023-01-01T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a3191bc7c3aa60fe91face2"
+  },
+  "id": 2,
+  "name": "men's clothing",
+  "description": "Clothing and apparel for men",
+  "image": "https://fakestoreapi.com/img/category-mens.jpg",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2023-01-01T00:00:00.000Z"
+  }
+}]

@@ -1,0 +1,83 @@
+[{
+  "_id": {
+    "$oid": "6a3191bc7c3aa60fe91fad02"
+  },
+  "id": 5,
+  "orderId": 5,
+  "userId": 3,
+  "method": "net_banking",
+  "cardLast4": null,
+  "amount": 569,
+  "currency": "USD",
+  "status": "pending",
+  "transactionId": "TXN100005",
+  "paidAt": null
+},
+{
+  "_id": {
+    "$oid": "6a3191bc7c3aa60fe91facff"
+  },
+  "id": 2,
+  "orderId": 2,
+  "userId": 3,
+  "method": "debit_card",
+  "cardLast4": "8765",
+  "amount": 988.8,
+  "currency": "USD",
+  "status": "success",
+  "transactionId": "TXN100002",
+  "paidAt": {
+    "$date": "2020-01-02T09:02:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a3191bc7c3aa60fe91fad00"
+  },
+  "id": 3,
+  "orderId": 3,
+  "userId": 5,
+  "method": "upi",
+  "cardLast4": null,
+  "amount": 654.99,
+  "currency": "USD",
+  "status": "success",
+  "transactionId": "TXN100003",
+  "paidAt": {
+    "$date": "2020-04-11T08:05:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a3191bc7c3aa60fe91fad01"
+  },
+  "id": 4,
+  "orderId": 4,
+  "userId": 7,
+  "method": "credit_card",
+  "cardLast4": "1111",
+  "amount": 55.99,
+  "currency": "USD",
+  "status": "refunded",
+  "transactionId": "TXN100004",
+  "paidAt": {
+    "$date": "2020-05-01T12:02:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a3191bc7c3aa60fe91facfe"
+  },
+  "id": 1,
+  "orderId": 1,
+  "userId": 8,
+  "method": "credit_card",
+  "cardLast4": "4242",
+  "amount": 121.83,
+  "currency": "USD",
+  "status": "success",
+  "transactionId": "TXN100001",
+  "paidAt": {
+    "$date": "2020-03-02T10:01:00.000Z"
+  }
+}]

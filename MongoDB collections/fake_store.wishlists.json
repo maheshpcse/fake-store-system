@@ -1,0 +1,71 @@
+[{
+  "_id": {
+    "$oid": "6a3191bc7c3aa60fe91fad05"
+  },
+  "id": 3,
+  "userId": 8,
+  "products": [
+    {
+      "productId": 13,
+      "addedAt": {
+        "$date": "2020-01-20T08:00:00.000Z"
+      }
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a3191bc7c3aa60fe91fad04"
+  },
+  "id": 2,
+  "userId": 7,
+  "products": [
+    {
+      "productId": 1,
+      "addedAt": {
+        "$date": "2020-03-05T11:00:00.000Z"
+      }
+    },
+    {
+      "productId": 18,
+      "addedAt": {
+        "$date": "2020-03-06T15:30:00.000Z"
+      }
+    },
+    {
+      "productId": 3,
+      "addedAt": {
+        "$date": "2020-03-10T10:00:00.000Z"
+      }
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a3191bc7c3aa60fe91fad06"
+  },
+  "id": 4,
+  "userId": 3,
+  "products": []
+},
+{
+  "_id": {
+    "$oid": "6a3191bc7c3aa60fe91fad03"
+  },
+  "id": 1,
+  "userId": 5,
+  "products": [
+    {
+      "productId": 13,
+      "addedAt": {
+        "$date": "2020-02-10T09:00:00.000Z"
+      }
+    },
+    {
+      "productId": 3,
+      "addedAt": {
+        "$date": "2020-02-12T14:00:00.000Z"
+      }
+    }
+  ]
+}]

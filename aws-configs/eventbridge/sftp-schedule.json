@@ -1,0 +1,24 @@
+{
+  "service": "Amazon EventBridge Scheduler",
+  "Name": "fake-store-sftp-poll-every-5-minutes",
+  "Description": "Invoke the SFTP ingestion Lambda every five minutes.",
+  "ScheduleExpression": "rate(5 minutes)",
+  "ScheduleExpressionTimezone": "UTC",
+  "State": "ENABLED",
+  "FlexibleTimeWindow": {
+    "Mode": "OFF"
+  },
+  "Target": {
+    "Arn": "arn:aws:lambda:${AWS_REGION}:${AWS_ACCOUNT_ID}:function:${SFTP_LAMBDA_NAME}",
+    "RoleArn": "arn:aws:iam::${AWS_ACCOUNT_ID}:role/${EVENTBRIDGE_SCHEDULER_ROLE_NAME}",
+    "Input": "{\"source\":\"eventbridge-scheduler\",\"job\":\"sftp-payment-file-poll\"}",
+    "RetryPolicy": {
+      "MaximumEventAgeInSeconds": 3600,
+      "MaximumRetryAttempts": 2
+    },
+    "DeadLetterConfig": {
+      "Arn": "arn:aws:sqs:${AWS_REGION}:${AWS_ACCOUNT_ID}:${DLQ_NAME}"
+    }
+  }
+}
+

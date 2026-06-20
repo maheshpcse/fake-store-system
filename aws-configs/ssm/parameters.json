@@ -1,0 +1,42 @@
+{
+  "service": "AWS Systems Manager Parameter Store",
+  "parameters": [
+    {
+      "Name": "/fake-store/prod/s3/bucket-name",
+      "Type": "String",
+      "Value": "${S3_BUCKET_NAME}",
+      "Tier": "Standard"
+    },
+    {
+      "Name": "/fake-store/prod/s3/raw-prefix",
+      "Type": "String",
+      "Value": "raw",
+      "Tier": "Standard"
+    },
+    {
+      "Name": "/fake-store/prod/s3/archive-prefix",
+      "Type": "String",
+      "Value": "archive",
+      "Tier": "Standard"
+    },
+    {
+      "Name": "/fake-store/prod/s3/error-prefix",
+      "Type": "String",
+      "Value": "error",
+      "Tier": "Standard"
+    },
+    {
+      "Name": "/fake-store/prod/payments/supported-currencies",
+      "Type": "StringList",
+      "Value": "USD",
+      "Tier": "Standard"
+    },
+    {
+      "Name": "/fake-store/prod/payments/amount-must-match-order",
+      "Type": "String",
+      "Value": "true",
+      "Tier": "Standard"
+    }
+  ]
+}
+

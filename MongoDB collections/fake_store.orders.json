@@ -1,0 +1,89 @@
+[{
+  "_id": {
+    "$oid": "6a3191bc7c3aa60fe91facf3"
+  },
+  "id": 3,
+  "userId": 5,
+  "addressId": 1,
+  "status": "shipped",
+  "totalAmount": 654.99,
+  "discount": 0,
+  "finalAmount": 654.99,
+  "paymentMethod": "upi",
+  "orderedAt": {
+    "$date": "2020-04-11T08:00:00.000Z"
+  },
+  "deliveredAt": null
+},
+{
+  "_id": {
+    "$oid": "6a3191bc7c3aa60fe91facf1"
+  },
+  "id": 1,
+  "userId": 8,
+  "addressId": 5,
+  "status": "delivered",
+  "totalAmount": 121.83,
+  "discount": 0,
+  "finalAmount": 121.83,
+  "paymentMethod": "credit_card",
+  "orderedAt": {
+    "$date": "2020-03-02T10:00:00.000Z"
+  },
+  "deliveredAt": {
+    "$date": "2020-03-07T14:30:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a3191bc7c3aa60fe91facf2"
+  },
+  "id": 2,
+  "userId": 3,
+  "addressId": 4,
+  "status": "delivered",
+  "totalAmount": 1038.8,
+  "discount": 50,
+  "finalAmount": 988.8,
+  "paymentMethod": "debit_card",
+  "orderedAt": {
+    "$date": "2020-01-02T09:00:00.000Z"
+  },
+  "deliveredAt": {
+    "$date": "2020-01-08T16:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a3191bc7c3aa60fe91facf5"
+  },
+  "id": 5,
+  "userId": 3,
+  "addressId": 4,
+  "status": "pending",
+  "totalAmount": 599,
+  "discount": 30,
+  "finalAmount": 569,
+  "paymentMethod": "net_banking",
+  "orderedAt": {
+    "$date": "2020-06-15T10:00:00.000Z"
+  },
+  "deliveredAt": null
+},
+{
+  "_id": {
+    "$oid": "6a3191bc7c3aa60fe91facf4"
+  },
+  "id": 4,
+  "userId": 7,
+  "addressId": 3,
+  "status": "cancelled",
+  "totalAmount": 55.99,
+  "discount": 0,
+  "finalAmount": 55.99,
+  "paymentMethod": "credit_card",
+  "orderedAt": {
+    "$date": "2020-05-01T12:00:00.000Z"
+  },
+  "deliveredAt": null
+}]

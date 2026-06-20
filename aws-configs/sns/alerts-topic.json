@@ -1,0 +1,16 @@
+{
+  "service": "Amazon SNS",
+  "topic": {
+    "Name": "fake-store-production-alerts",
+    "DisplayName": "Fake Store Alerts",
+    "Tags": {
+      "Application": "fake-store",
+      "Environment": "production"
+    }
+  },
+  "subscription": {
+    "Protocol": "email",
+    "Endpoint": "${ALERT_EMAIL_ADDRESS}"
+  }
+}
+

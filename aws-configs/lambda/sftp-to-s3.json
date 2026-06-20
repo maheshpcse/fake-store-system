@@ -1,0 +1,59 @@
+{
+  "FunctionName": "${SFTP_LAMBDA_NAME}",
+  "Description": "Poll SFTP for payment files and upload them to the S3 raw prefix.",
+  "Runtime": "python3.12",
+  "Architectures": [
+    "x86_64"
+  ],
+  "Handler": "app.workers.lambda_handlers.sftp_to_s3_handler.lambda_handler",
+  "Role": "arn:aws:iam::${AWS_ACCOUNT_ID}:role/${SFTP_LAMBDA_ROLE_NAME}",
+  "CodeZipFile": "deployment/lambda/dist/fake-store-sftp-to-s3.zip",
+  "MemorySize": 512,
+  "Timeout": 300,
+  "EphemeralStorage": {
+    "Size": 1024
+  },
+  "ReservedConcurrentExecutions": 1,
+  "TracingConfig": {
+    "Mode": "Active"
+  },
+  "VpcConfig": {
+    "SubnetIds": [
+      "${PRIVATE_SUBNET_1}",
+      "${PRIVATE_SUBNET_2}"
+    ],
+    "SecurityGroupIds": [
+      "${LAMBDA_SECURITY_GROUP_ID}"
+    ],
+    "Ipv6AllowedForDualStack": false
+  },
+  "Environment": {
+    "Variables": {
+      "APP_NAME": "Fake Store SFTP Ingestion",
+      "ENVIRONMENT": "production",
+      "DATABASE_URL": "${DATABASE_URL_FROM_SECURE_DEPLOYMENT}",
+      "S3_BUCKET_NAME": "${S3_BUCKET_NAME}",
+      "S3_RAW_PREFIX": "raw",
+      "S3_ARCHIVE_PREFIX": "archive",
+      "S3_ERROR_PREFIX": "error",
+      "SFTP_HOST": "${SFTP_HOST_FROM_SECURE_DEPLOYMENT}",
+      "SFTP_PORT": "22",
+      "SFTP_USERNAME": "${SFTP_USERNAME_FROM_SECURE_DEPLOYMENT}",
+      "SFTP_PASSWORD": "${SFTP_PASSWORD_FROM_SECURE_DEPLOYMENT}",
+      "SFTP_INBOUND_PATH": "/inbound",
+      "SFTP_ARCHIVE_PATH": "/archive",
+      "SUPPORTED_CURRENCIES": "USD",
+      "PAYMENT_AMOUNT_MUST_MATCH_ORDER": "true"
+    }
+  },
+  "LoggingConfig": {
+    "LogFormat": "JSON",
+    "ApplicationLogLevel": "INFO",
+    "SystemLogLevel": "INFO",
+    "LogGroup": "/aws/lambda/${SFTP_LAMBDA_NAME}"
+  },
+  "DeadLetterConfig": {
+    "TargetArn": "arn:aws:sqs:${AWS_REGION}:${AWS_ACCOUNT_ID}:${DLQ_NAME}"
+  }
+}
+

@@ -1,0 +1,5 @@
+transactionId,orderId,userId,method,cardLast4,amount,currency,status,paidAt
+TXN100006,6,2,credit_card,1234,150.75,USD,success,2026-06-20T08:30:00Z
+TXN100007,7,4,upi,,89.99,USD,pending,
+TXN100008,8,5,debit_card,5678,-20.00,USD,success,2026-06-20T09:00:00Z
+

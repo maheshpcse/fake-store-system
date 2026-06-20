@@ -1,0 +1,16 @@
+{
+  "service": "Amazon CloudWatch Logs",
+  "logGroups": [
+    {
+      "logGroupName": "/aws/lambda/${SFTP_LAMBDA_NAME}",
+      "retentionInDays": 30,
+      "logGroupClass": "STANDARD"
+    },
+    {
+      "logGroupName": "/aws/lambda/${PROCESSOR_LAMBDA_NAME}",
+      "retentionInDays": 30,
+      "logGroupClass": "STANDARD"
+    }
+  ]
+}
+

@@ -1,0 +1,95 @@
+[{
+  "_id": {
+    "$oid": "6a3191bc7c3aa60fe91face7"
+  },
+  "id": 2,
+  "userId": 5,
+  "label": "office",
+  "fullName": "Derek Powell",
+  "phone": "1-956-001-1945",
+  "street": "100 Main Blvd",
+  "city": "San Antonio",
+  "state": "Texas",
+  "zipcode": "80796-5678",
+  "country": "USA",
+  "isDefault": false,
+  "createdAt": {
+    "$date": "2023-03-15T14:30:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a3191bc7c3aa60fe91face6"
+  },
+  "id": 1,
+  "userId": 5,
+  "label": "home",
+  "fullName": "Derek Powell",
+  "phone": "1-956-001-1945",
+  "street": "adams St",
+  "city": "San Antonio",
+  "state": "Texas",
+  "zipcode": "80796-1234",
+  "country": "USA",
+  "isDefault": true,
+  "createdAt": {
+    "$date": "2023-02-10T10:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a3191bc7c3aa60fe91facea"
+  },
+  "id": 5,
+  "userId": 8,
+  "label": "home",
+  "fullName": "William Hopkins",
+  "phone": "1-890-234-5678",
+  "street": "elm street",
+  "city": "Mesa",
+  "state": "Arizona",
+  "zipcode": "85201-4321",
+  "country": "USA",
+  "isDefault": true,
+  "createdAt": {
+    "$date": "2023-05-10T09:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a3191bc7c3aa60fe91face8"
+  },
+  "id": 3,
+  "userId": 7,
+  "label": "home",
+  "fullName": "Miriam Snyder",
+  "phone": "1-123-943-0563",
+  "street": "saddle st",
+  "city": "Fresno",
+  "state": "California",
+  "zipcode": "96378-0245",
+  "country": "USA",
+  "isDefault": true,
+  "createdAt": {
+    "$date": "2023-01-20T08:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a3191bc7c3aa60fe91face9"
+  },
+  "id": 4,
+  "userId": 3,
+  "label": "home",
+  "fullName": "Kevin Ryan",
+  "phone": "1-567-094-1245",
+  "street": "new road",
+  "city": "Culver City",
+  "state": "California",
+  "zipcode": "93567-1234",
+  "country": "USA",
+  "isDefault": true,
+  "createdAt": {
+    "$date": "2023-04-01T12:00:00.000Z"
+  }
+}]

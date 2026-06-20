@@ -1,0 +1,9 @@
+{
+  "FunctionName": "${PROCESSOR_LAMBDA_NAME}",
+  "StatementId": "AllowS3PaymentBucketInvoke",
+  "Action": "lambda:InvokeFunction",
+  "Principal": "s3.amazonaws.com",
+  "SourceArn": "arn:aws:s3:::${S3_BUCKET_NAME}",
+  "SourceAccount": "${AWS_ACCOUNT_ID}"
+}
+

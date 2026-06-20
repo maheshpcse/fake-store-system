@@ -1,0 +1,61 @@
+{
+  "service": "Amazon VPC",
+  "design": {
+    "vpcCidr": "10.20.0.0/16",
+    "availabilityZones": 2,
+    "privateSubnets": [
+      {
+        "name": "fake-store-private-a",
+        "cidr": "10.20.10.0/24",
+        "availabilityZone": "${AWS_REGION}a"
+      },
+      {
+        "name": "fake-store-private-b",
+        "cidr": "10.20.20.0/24",
+        "availabilityZone": "${AWS_REGION}b"
+      }
+    ],
+    "lambdaSecurityGroup": {
+      "name": "fake-store-lambda-sg",
+      "inboundRules": [],
+      "outboundRules": [
+        {
+          "protocol": "TCP",
+          "port": 3306,
+          "destination": "${RDS_SECURITY_GROUP_ID}",
+          "description": "MySQL access"
+        },
+        {
+          "protocol": "TCP",
+          "port": 22,
+          "destination": "${SFTP_SERVER_CIDR}",
+          "description": "SFTP access"
+        },
+        {
+          "protocol": "TCP",
+          "port": 443,
+          "destination": "0.0.0.0/0",
+          "description": "AWS APIs through NAT or VPC endpoints"
+        }
+      ]
+    },
+    "rdsSecurityGroup": {
+      "name": "fake-store-rds-sg",
+      "inboundRules": [
+        {
+          "protocol": "TCP",
+          "port": 3306,
+          "sourceSecurityGroup": "${LAMBDA_SECURITY_GROUP_ID}",
+          "description": "MySQL from Lambda"
+        }
+      ],
+      "outboundRules": []
+    },
+    "connectivityNotes": [
+      "Use a NAT gateway when the SFTP server is on the public internet.",
+      "Create an S3 gateway endpoint to keep S3 traffic private.",
+      "Create interface endpoints for Secrets Manager, SSM, CloudWatch Logs, SQS, and X-Ray if NAT is not used."
+    ]
+  }
+}
+
