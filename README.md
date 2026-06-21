@@ -19,6 +19,64 @@ SFTP -> Lambda -> S3 raw -> processor Lambda -> stage -> validation
 - FastAPI upload, batch status, and row-error endpoints
 - SQLite-backed integration tests
 
+## Local MySQL and frontend setup
+
+SQLyog-ready table and seed scripts are available in
+[`MySQL DB schemas/README.md`](MySQL%20DB%20schemas/README.md).
+
+Execute these files in order:
+
+```text
+MySQL DB schemas/00_create_database.sql
+MySQL DB schemas/01_create_all_tables.sql
+MySQL DB schemas/02_seed_all_data.sql
+MySQL DB schemas/03_verify_database.sql
+```
+
+For a manually created SQLyog database, these scripts are the authoritative
+local schema. Do not also run the initial Alembic migration against the same
+empty database because both paths create overlapping tables.
+
+Copy the local environment template and provide your MySQL password:
+
+```powershell
+Copy-Item '.\MySQL DB schemas\local.env.example' .env
+```
+
+Then start the API:
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+python scripts/test_mysql_connection.py
+uvicorn app.main:app --reload
+```
+
+The API allows local Angular, React, and Vite development origins by default.
+
+Useful frontend routes:
+
+```text
+POST /api/v1/auth/signup
+POST /api/v1/auth/login
+POST /api/v1/auth/refresh
+POST /api/v1/auth/logout
+GET  /api/v1/auth/me
+PATCH /api/v1/users/{user_id}
+GET  /api/v1/users/{user_id}/addresses
+POST /api/v1/users/{user_id}/addresses
+GET /api/v1/categories
+GET /api/v1/products
+GET /api/v1/products/{product_id}
+GET /api/v1/products/{product_id}/reviews
+GET /api/v1/users
+GET /api/v1/carts/user/{user_id}
+GET /api/v1/wishlists/user/{user_id}
+GET /api/v1/orders
+GET /api/v1/orders/{order_id}
+GET /api/v1/payments
+GET /api/v1/coupons/{code}
+```
+
 ## Setup
 
 ```powershell
